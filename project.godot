@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="TutorialGodotDo0"
+run/main_scene="uid://dxl1dltj0t3dd"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
