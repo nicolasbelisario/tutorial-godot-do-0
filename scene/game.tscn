@@ -3,16 +3,47 @@
 [ext_resource type="PackedScene" uid="uid://kavohfmnwumd" path="res://entities/player.tscn" id="1_5kiuu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n4st5"]
-size = Vector2(783.5, 137)
+size = Vector2(131, 35.75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5kiuu"]
+size = Vector2(101.5, 26.875)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dbls1"]
+size = Vector2(62.75, 23.4375)
 
 [node name="Game" type="Node2D" unique_id=1778924314]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1833619138]
-position = Vector2(186, 143)
+position = Vector2(66, 182)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=619036711]
 shape = SubResource("RectangleShape2D_n4st5")
 debug_color = Color(0.16038084, 0.6448373, 1.92523e-07, 0.41960785)
 
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=31286801]
+position = Vector2(134, -22)
+shape = SubResource("RectangleShape2D_5kiuu")
+debug_color = Color(0.16038084, 0.6448373, 1.92523e-07, 0.41960785)
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=1445606510]
+position = Vector2(229.625, -20.28125)
+shape = SubResource("RectangleShape2D_dbls1")
+debug_color = Color(0.16038084, 0.6448373, 1.92523e-07, 0.41960785)
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" unique_id=1630492159]
+position = Vector2(309, -31)
+shape = SubResource("RectangleShape2D_dbls1")
+debug_color = Color(0.16038084, 0.6448373, 1.92523e-07, 0.41960785)
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D" unique_id=291810629]
+position = Vector2(388, -43)
+shape = SubResource("RectangleShape2D_dbls1")
+debug_color = Color(0.16038084, 0.6448373, 1.92523e-07, 0.41960785)
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="StaticBody2D" unique_id=1487268065]
+position = Vector2(471, -43)
+shape = SubResource("RectangleShape2D_dbls1")
+debug_color = Color(0.16038084, 0.6448373, 1.92523e-07, 0.41960785)
+
 [node name="Player" parent="." unique_id=804131993 instance=ExtResource("1_5kiuu")]
-position = Vector2(12, 53)
+position = Vector2(29, 118)
